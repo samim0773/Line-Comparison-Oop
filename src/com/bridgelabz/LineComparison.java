@@ -57,6 +57,18 @@ public class LineComparison {
 
 		System.out.println("Equality of two line: " + lineOneDouble.equals(lineTwoDouble));
 
+		int check = lineOneDouble.compareTo(lineTwoDouble);
+		
+		if(check == 0){
+			System.out.println("The length of line 1 is equals to line 2");
+		    }
+
+		else if(check > 0){
+			System.out.println("The length of line 1 is greater than  line 2");
+                   }
+		else
+			System.out.println("The length of line 1 is less than line 2");
+   
 	}
 
 }
